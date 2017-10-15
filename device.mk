@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
     bdaddr_xiaomi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init.armani.bt.sh:system/bin/init.armani.bt.sh
+    $(LOCAL_PATH)/configs/init.armani.bt.sh:system/vendor/bin/init.armani.bt.sh
 
 # CABL
 PRODUCT_PROPERTY_OVERRIDES += \
