@@ -92,9 +92,6 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # Hardware tunables
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/lineagehw/
 
-# Headers
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(LOCAL_PATH)/hidl/compatibility_matrix.xml
