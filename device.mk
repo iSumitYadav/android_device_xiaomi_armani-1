@@ -83,12 +83,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     camera.msm8226 \
     libshim_camera \
-    libxml2 \
     Snap
 
 # Connectivity
 PRODUCT_PACKAGES += \
-    libcnefeatureconfig
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2
 
 # Display
 PRODUCT_PACKAGES += \
