@@ -143,6 +143,9 @@ BOARD_NO_SECURE_DISCARD := true
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS := /system/vendor/lib/hw/camera.vendor.msm8226.so|libshim_camera.so
+
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
 
