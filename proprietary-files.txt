@@ -188,20 +188,22 @@ vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
 
 # Radio
-bin/netmgrd:vendor/bin/netmgrd
+bin/netmgrd:vendor/bin/netmgrd|b64d20fa23c70e72a54e5296e31ec73394c537b2
 bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
 bin/rfs_access:vendor/bin/rfs_access
 bin/rmt_storage:vendor/bin/rmt_storage
-lib/libmdmdetect.so:vendor/lib/libmdmdetect.so
+lib/libmdmdetect.so
+lib/libmdmcutback.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
-vendor/lib/libdsi_netctrl.so
+vendor/lib/libdsi_netctrl.so|2621ea43600d81f58360ded5b54aa6f334ebe661
 vendor/lib/libnetmgr.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libril-qc-qmi-1.so
@@ -224,10 +226,10 @@ vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
--app/TimeService/TimeService.apk
+-app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
 bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
-vendor/lib/libTimeService.so
+-vendor/lib/libTimeService.so
 
 # Venus firmware
 etc/firmware/venus.b00:vendor/firmware/venus.b00
